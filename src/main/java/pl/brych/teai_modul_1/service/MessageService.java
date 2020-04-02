@@ -16,5 +16,7 @@ public class MessageService {
         this.messageSource = messageSource;
         String text = messageSource.getMessage("hello", new Object[]{"Arkadiusz", "Brych"}, Locale.forLanguageTag("PL"));
         System.out.println(text);
+        String text2 = messageSource.getMessage("hello", new Object[]{"Arkadiusz", "Brych"}, Locale.ENGLISH);
+        System.out.println(text2);
     }
 }
